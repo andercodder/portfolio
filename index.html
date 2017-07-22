@@ -8,6 +8,7 @@
 
 <!--css for font awesome
 <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">-->
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- -->
 
 <!-- my css
@@ -57,14 +58,19 @@
     margin-top:0px;
     padding-top: 0px;
     text-align: center;
+
 }
 
 .section h1 {
+  text-transform: uppercase;
   text-align: center;
   padding-top: 60px;
 }
 .section img {
   width: 12%;
+}
+.section p{
+  text-align: center;
 }
 #saiba_mais{
   text-align: center;
@@ -72,11 +78,50 @@
 }
 .skills {
   background-image: url(image/2.jpg);
+  background-color: #f7f7f7;
   background-size: cover;
   color: #ffffff;
 
 }
+.title{
 
+	text-transform: capitalize;
+	font: bold 32px 'Open Sans', sans-serif;
+	margin-bottom: 35px;
+	text-align: center;
+
+
+}
+
+hr{
+	width: 160px;
+	height: 2px;
+	background-color: #2196F3;
+	border: 0;
+	margin-bottom: 80px;
+  text-align: center;
+
+}
+a{
+	text-decoration: none;
+	color: inherit;
+	cursor: pointer;
+
+	opacity: 0.9;
+}
+
+a:hover{
+	opacity: 1;
+}
+
+a.btn{
+	color: #fff;
+	border-radius: 4px;
+	text-transform: uppercase;
+	background-color: #2196F3;
+	font-weight: 800;
+	text-align: center;
+}
 
 </style>
 <!-- -->
@@ -131,7 +176,8 @@ s
       <div class="container">
         <div class="row">
         <div class="col-md-12">
-          <h1 class="responsive">Quem Sou ?</h1>
+          <h1 class="title responsive">Quem Sou ? <hr class="my-3 "></h1>
+
 
         </div>
             <div class="col-md-12">
@@ -150,7 +196,7 @@ s
               <div class="col-md-12">
 
               </div>
-              <hr class="my-6 col-md-12">
+
               <br>
             </div>
           </div>
@@ -158,7 +204,11 @@ s
             <div class="container">
               <div class="row" id="saiba_mais">
                 <h2 class="col-md-12">Saiba Mais</h2>
-                <div class="col-md-12"></div>
+                <div class="col-md-12">
+                  <br>
+                </div>
+                <div class="container">
+                  <div class="row">
 
 
                   <button class="btn btn-sucess bg-inverse col-md-4" type="button" name="button"></i class="fa fa-github" aria-hidden="false"> GitHubb</button>
@@ -167,7 +217,7 @@ s
 
                   <button class="btn btn-danger col-md-4" type="button" name="button"><i  class="fa fa-google-plus" aria-hidden="true"> </i> google +</button>
 
-
+                    </div>
               </div>
 
 
@@ -189,10 +239,10 @@ s
 <div class="container">
 
 
-	<h1 class="letra_grande" align="center">Habilidades</h1>
+	<h1 class="letra_grande title" align="center">Habilidades</h1>
 
 	<div class="habilidades_contenedor">
-		<h2 >Desenvolvimento  WEB</h2>
+		<h2  >Desenvolvimento  WEB</h2>
 		<div id="codeconSkills">
 			<div class="codeconSkillbar">
 				<div id="" class="skillBar" skill-percentage="100%" skill-color="#448AFF">
@@ -237,6 +287,49 @@ s
 
 </section>
 <!--skills ends here -->
+
+<!--servivos section starts here-->
+<section class="section">
+
+  <h1>Projectos</h1>
+  <div class="container">
+    <div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="http://via.placeholder.com/350x200" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="http://via.placeholder.com/350x200" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="http://via.placeholder.com/350x200" alt="Card image cap">
+    <div class="card-block">
+      <h4 class="card-title">Card title</h4>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">Last updated 3 mins ago</small>
+    </div>
+  </div>
+</div>
+
+  </div>
+
+</section>
+<!--servic3s section ends here-->
 
 
 
