@@ -122,7 +122,38 @@ a.btn{
 	font-weight: 800;
 	text-align: center;
 }
+#section_contacta_me{
+  background-image: url(image/bg3.jpg);
+  background-size: cover;
+  background-position:50% 50%;
+  padding-top: 5%;
+}
+ #botaoEnviar{
+   margin-left: auto;
+   margin-right: auto;
+ }
+ @media screen and (max-width:768px) {
+img {
+    width:100%;
+}
+.container-fluid {
+    max-width:100%;
+    width: 100%;
+}
 
+.col-md-6{
+    width:100%;
+    float:left;
+    margin:0;
+    margin-bottom: 5%;
+}
+}
+@media screen and (max-width:768px) {
+  #section_contacta_me {
+    margin-top:50%;
+  }
+
+}
 </style>
 <!-- -->
     <title>Portfolio</title>
@@ -292,66 +323,56 @@ s
 <section class="section">
 
   <h1 class="title">Projectos <hr class="my-3 "></h1><br>
-  <div class="container">
-    <div class="card-deck">
-  <div class="card">
-    <img class="card-img-top" src="http://via.placeholder.com/350x200" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
-    </div>
-  </div>
-  <div class="card">
-    <img class="card-img-top" src="http://via.placeholder.com/350x200" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+  <div class="container-fluid">
+    <div class="row">
+  <div class="col-md-6">
+    <div class="card">
+      <img class="card-img-top" src="http://placeholdit/350x150" alt="Card image cap">
+      <div class="card-block">
+        <h3 class="card-title">Special title treatment</h3>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
   </div>
-  <div class="card">
-    <img class="card-img-top" src="http://via.placeholder.com/634x270" alt="Card image cap">
-    <div class="card-block">
-      <h4 class="card-title">Card title</h4>
-      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-    </div>
-    <div class="card-footer">
-      <small class="text-muted">Last updated 3 mins ago</small>
+  <div class="col-md-6">
+    <div class="card">
+      <img class="card-img-top" src="..." alt="Card image cap">
+      <div class="card-block">
+        <h3 class="card-title">Special title treatment</h3>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary">Go somewhere</a>
+      </div>
     </div>
   </div>
- </div>
+</div>
 </div>
 
 </section>
 <!--servic3s section ends here-->
 <!--section contacta-me starts here-->
 
-  <section class="section">
+  <section class="section" id="section_contacta_me">
     <div class="container">
-      <h1>contacta-me <hr class="my-3"></h1><br>
+      <h1>contacta-me <hr class="my-3"></h1><br><br><br>
       <form class="form-group">
         <div class="row">
-          <div class="col-4">
+          <div class="col-lg-4">
             <input type="text" class="form-control" id="nome" placeholder="seu nome">
           </div>
-          <div class="col-4">
+          <div class="col-lg-4">
             <input type="email" class="form-control" id="email"  placeholder="seu email">
           </div>
-          <div class="col-4">
+          <div class="col-lg-4">
             <input type="number" class="form-control" id="numeroDeTelefone" placeholder="ex: +244 944783640">
           </div>
 
 
   <div class="form-group col-md-12"><br>
   <label for="nome" class="sr-only">Mensagem</label>
-<textarea class="form-control" id="exampleTextarea" rows="3" placeholder="sua Mensagem ex: Ola André... Eu preciso de uma Pagina Web"></textarea></div>
+<textarea class="form-control" id="exampleTextarea" cols="8" rows="8" placeholder="sua Mensagem ex: Ola André... Eu preciso de uma Pagina Web"></textarea></div>
 
-<button type="submit" class="btn btn-primary">Envia Mensagem</button>
+<button type="submit"  class="btn btn-primary float-right" id="botaoEnviar">Envia Mensagem</button>
 
 </form>
 
