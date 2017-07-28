@@ -53,7 +53,7 @@
 
     }
 .section{
-
+    width: 100%;
     height: 100%;
     margin-top:0px;
     padding-top: 0px;
@@ -126,7 +126,7 @@ a.btn{
   background-image: url(image/bg3.jpg);
   background-size: cover;
   background-position:50% 50%;
-  margin-top: 10%;
+  margin-top: 0%;
   padding-top: 0%;
 }
  #botaoEnviar{
@@ -159,6 +159,30 @@ img {
   #section_contacta_me {
     margin-top:100%;
   }
+
+}
+#section_certificacoes{
+  background-color: #eeeeee;
+  background-size: 50% 50%;
+  padding-top: -15px;
+
+}
+#section_projectos{
+  background-color: #eeeeee;
+  text-decoration: none;
+}
+.card{
+  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  transition: box-shadow 0.3s ease-in-out;
+  border-radius: 5px;
+  -webkit-transition: box-shadow 3s -webkit-transform 2s;
+    transition: box-shadow 3s;
+}
+
+.card:hover {
+  box-shadow: 0 10px 20px 10px rgba(0,0,0,0.3);
+  
+
 
 }
 </style>
@@ -271,6 +295,39 @@ s
 
     </section>
 
+    <!--section certificações starts here-->
+
+        <section class="section " id="section_certificacoes">
+          <h1 class="title">Certificações<hr class="my-3 "></h1><br>
+          <div class="container-fluid">
+            <div class="row">
+          <div class="col-md-4 offset-md-2">
+             <div class="card">
+            <img class="card-img-top" src="image/udemy.jpg" alt="Card image cap" style="width:100%;">
+              <div class="card-block">
+                <h3 class="card-title">udemy</h3>
+                <p class="card-text">The Complete Developer Course.</p>
+                <a href="https://udemy-certificate.s3.amazonaws.com/image/UC-EVYG2GX4.jpg" target="_blank" class="btn btn-primary"> clique para ver...</a>
+          </div>
+            </div>
+          </div>
+          <div class="col-md-4 offset-md-" >
+            <div class="card">
+              <img class="card-img-top" src="image/udemy.jpg" alt="Card image cap" style="width:100%;">
+              <div class="card-block">
+                <h3 class="card-title">CCA</h3>
+                <p class="card-text">cambdrige certification Authority - css</p>
+                <a href="#" class="btn btn-primary">clique para ver...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        </section>
+
+
+    <!--sectio certificações end here-->
+
 <!-- section quem sou ends here -->
 
 <section id="habilidades" class="skills section">
@@ -327,7 +384,7 @@ s
 <!--skills ends here -->
 
 <!--serviços section starts here-->
-<section class="section">
+<section class="section" id="section_projectos">
 
   <h1 class="title">Projectos <hr class="my-3 "></h1><br>
   <div class="container-fluid">
@@ -338,7 +395,7 @@ s
       <div class="card-block">
         <h3 class="card-title">consultorio empresarial</h3>
         <p class="card-text">empresa de consultoria de gestão que marca agora sua actividade online com seu website.</p>
-        <a href="#" class="btn btn-primary">veja...</a>
+        <a href="http://www.consultorioempresarial.co.ao/" target="_blank" class="btn btn-primary">veja...</a>
       </div>
     </div>
   </div>
