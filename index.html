@@ -3,9 +3,12 @@
 <head lang="en">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!--to work offline bootstrap CSS-->
-<link rel="stylesheet" href="bootstrap-4.0.0-alpha.6/dist/css/bootstrap.min.css">
+    <!--to work offline bootstrap CSS
+<link rel="stylesheet" href="bootstrap-4.0.0-alpha.6/dist/css/bootstrap.min.css"> -->
 
+<!--work on line-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+<!-- -->
 <!--css for font awesome
 <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">-->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,7 +22,12 @@
 
 <link rel="stylesheet" href="skills/animate.css">
 <link rel="stylesheet" href="skills/habilidades.css">
+
+<!-- jquery to work off line-->
 <script type="text/javascript" src="jquery/jquery-3.2.0.min.js"></script>
+<!-- jquery to work on line -->
+<!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+-->
 <script src="skills/jquery.skills.js"></script>
 
 <script>
@@ -29,6 +37,45 @@
 
   });
 
+  /*fix the error */
+  $(".navbar").click(function () {
+
+    $navbar = $(this);
+    //getting the next element
+    $content = $navbar.next();
+    //open up the content needed - toggle the slide- if visible, slide up, if not slidedown.
+    $content.slideToggle(500, function () {
+        //execute this after slideToggle is done
+        //change text of header based on visibility of content div
+        $navbar.text(function () {
+            //change text based on condition
+            return $content.is(":visible") ? "Collapse" : "Expand";
+        });
+    });
+
+});
+/*end fix the error*/
+
+/*smooth scroll */
+$(document).ready(function(){
+  'use strict';
+  $('.nav-link').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 1500);
+            return false;
+        }
+    }
+  });
+});
+
+/* End of SMOOTH SCROLL */
 </script>
 
 
@@ -36,6 +83,23 @@
 
 <!--end of skill-->
 <style >
+  /* base structure */
+  html,
+body {
+  height: 100%;
+  background-color: #333;
+  color: #eeeeee;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60;
+  position: relative;
+}
+
 
 /* edit jumbotron    */
     .jumbotron{
@@ -123,7 +187,7 @@ a.btn{
 	text-align: center;
 }
 #section_contacta_me{
-  background-image: url(image/bg3.jpg);
+/*  background-image: url(image/bg3.jpg); */
   background-size: cover;
   background-position:50% 50%;
   margin-top: 0%;
@@ -162,42 +226,81 @@ img {
 
 }
 #section_certificacoes{
-  background-color: #eeeeee;
+/*  background-color: #eeeeee;*/
   background-size: 50% 50%;
   padding-top: -15px;
 
 }
 #section_projectos{
-  background-color: #eeeeee;
+/*  background-color: #eeeeee;*/
   text-decoration: none;
 }
 .card{
-  box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+  box-shadow: 0 10px 20px #f5f5f5; /*rgba(0,0,0,0.15);*/
   transition: box-shadow 0.3s ease-in-out;
   border-radius: 5px;
   -webkit-transition: box-shadow 3s -webkit-transform 2s;
     transition: box-shadow 3s;
+    color:#333;
 }
 
 .card:hover {
   box-shadow: 0 10px 20px 10px rgba(0,0,0,0.3);
-  
-
+}
+.footer{
+  background-color: #f5f5f5;
+  position: relative;
+  width: 100%;
+  height: 80px;
+  color: black;
+  bottom: 0;
+  line-height: 60px;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  margin-top: 20px;
 
 }
+
+
 </style>
 <!-- -->
     <title>Portfolio</title>
 </head>
-<body>
+<body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="50">
+  <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md fixed-top">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">André de Carvalho</a>
 
-s
-  <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md  fixed-top" >
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mt-md-0 mt-2 navbar-right">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#quem_sou">Quem sou ?</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section_certificacoes">Certificacões</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#habilidades">Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#section_contacta_me">Contacta me</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+<!--  <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md  fixed-top" >
  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar_collapse" aria-controls="#navbar_collapse" aria-expanded="true" aria-label="Toggle navigation">
    <span class="navbar-toggler-icon"></span>
- </button>
+ </button>-->
  <!-- <a class="navbar-brand" href="#"><img src="imagens/logo-small.png" alt="logo" /></a>-->
-
+<!--
  <div class="collapse navbar-collapse" id="navbar_collapse">
    <ul class="navbar-nav mr-auto mt-2 mt-md-0 navbar-right">
      <li class="nav-item active">
@@ -216,7 +319,7 @@ s
  </div>
 </nav>
 
-
+-->
    <!-- section jumbotron -->
 
    <section>
@@ -234,7 +337,7 @@ s
 <!-- jumbotron section ends here -->
 
 <!-- section quem sou começa aqui -->
-    <section class="section">
+    <section class="section" id="quem_sou">
       <div class="container">
         <div class="row">
         <div class="col-md-12">
@@ -448,13 +551,30 @@ s
 
 <!--secton contacta-me ends here-->
 
+<!-- footer -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+                <p class="col-md-6"> Direitos de autor André de Carvalho &copy 2017</p>
+                <div id="footer_padding">
+                  <i class="fa fa-twitter col-md-3" aria-hidden="true" style="color:blue;"></i>
+                  <i class="fa fa-google-plus col-md-3" aria-hidden="true" style="color:red;"></i>
+
+                </div>
+
+      </div>
+    </div>
+</footer>
 
 
-
- <!--to work offline-->
+ <!--to work offline
 
           <script type="text/javascript" src="bootstrap-4.0.0-alpha.6/docs/assets/js/vendor/tether.min.js"></script>
-          <script src="bootstrap-4.0.0-alpha.6/dist/js/bootstrap.min.js"></script>
+          <script src="bootstrap-4.0.0-alpha.6/dist/js/bootstrap.min.js"></script> -->
+
+          <!-- to work online -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
 
           <!---custom js
           <script src="js/custom.js"></script> -->
