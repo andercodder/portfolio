@@ -66,7 +66,10 @@
 <!--css for font awesome
 <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">-->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- -->
+<!-- animate n scroll cdn css -->
+
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+<!-- end of animate on scroll-->
 
 <!-- my css
 <link rel="stylesheet" type="text/css" href="css/custom-style.css">-->
@@ -154,18 +157,32 @@ body {
   height: 100%;
   background-color: #333;
   color: #eeeeee;
+  width: 100%;
+
+
 }
 html {
   position: relative;
   min-height: 100%;
+
 }
 body {
   /* Margin bottom by footer height */
-  margin-bottom: 60;
+  margin-bottom: 0px;
   position: relative;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
+@media screen and (max-width:764px) {
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100%;
+  margin-right:0px;
+  padding-right:0px;
 
-
+  }
+}
 /* edit jumbotron    */
     .jumbotron{
       background-image:url(image/4.jpg);
@@ -184,8 +201,9 @@ body {
 .section{
     width: 100%;
     height: 100%;
+    margin: 0px;
     margin-top:0px;
-    padding-top: 0px;
+    padding-top: 20px;
     text-align: center;
 
 }
@@ -193,7 +211,8 @@ body {
 .section h1 {
   text-transform: uppercase;
   text-align: center;
-  padding-top: 60px;
+  padding-top: 200px;
+
 }
 .section img {
   width: 12%;
@@ -325,6 +344,9 @@ img {
   margin-top: 0px;
 
 }
+.clear{
+  clear: both;
+}
 
 
 </style>
@@ -412,7 +434,7 @@ img {
         </div>
             <div class="col-md-12">
             <p>
-              <img  class="rounded-circle img-fluid" src="image/background.jpg" alt="minha imagem"/>
+              <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-duration="1000"  class="rounded-circle img-fluid" src="image/background.jpg" alt="minha imagem"/>
             </p>
           </div>
           <div class="container">
@@ -464,12 +486,15 @@ img {
     </section>
 
     <!--section certificações starts here-->
+    <div class="clear">
+
+    </div>
 
         <section class="section " id="section_certificacoes">
           <h1 class="title">Certificações<hr class="my-3 "></h1><br>
           <div class="container-fluid">
             <div class="row">
-          <div class="col-md-4 offset-md-2">
+          <div class="col-md-4 offset-md-2" data-aos="fade-down">
              <div class="card">
             <img class="card-img-top" src="image/udemy.jpg" alt="Card image cap" style="width:100%;">
               <div class="card-block">
@@ -480,7 +505,7 @@ img {
             </div>
           </div>
           <div class="col-md-4 offset-md-" >
-            <div class="card">
+            <div class="card" data-aos="fade-zoom-in"     data-aos-easing="ease-in-back" data-aos-delay="300">
               <img class="card-img-top" src="image/udemy.jpg" alt="Card image cap" style="width:100%;">
               <div class="card-block">
                 <h3 class="card-title">CCA</h3>
@@ -490,14 +515,16 @@ img {
             </div>
           </div>
         </div>
-
+  </div>
         </section>
 
 
     <!--sectio certificações end here-->
 
 <!-- section quem sou ends here -->
+<div class="clear">
 
+</div>
 <section id="habilidades" class="skills section">
 <div class="container">
 
@@ -558,7 +585,7 @@ img {
   <div class="container-fluid">
     <div class="row">
   <div class="col-md-4 offset-md-2">
-    <div class="card">
+    <div class="card" data-aos="fade-down-right" data-aos-duration="1000">
       <img class="card-img-top" src="image/ce.png" alt="Card image cap" style="width:100%;">
       <div class="card-block">
         <h3 class="card-title">consultorio empresarial</h3>
@@ -568,7 +595,7 @@ img {
     </div>
   </div>
   <div class="col-md-4 offset-md-" >
-    <div class="card">
+    <div class="card" data-aos="fade-down-left" data-aos-duration="1000">
       <img class="card-img-top" src="image/loso.png" alt="Card image cap" style="width:100%;">
       <div class="card-block">
         <h3 class="card-title">loso</h3>
@@ -594,17 +621,17 @@ img {
       <form class="form-group">
         <div class="row">
           <div class="col-lg-4">
-            <input type="text" class="form-control" id="nome" placeholder="seu nome">
+            <input type="text" class="form-control" id="nome" placeholder="seu nome" data-aos="fade-down-right" data-aos-duration="800">
+          </div>
+          <div class="col-lg-4" >
+            <input type="email" class="form-control" id="email"  placeholder="seu email" data-aos="fade-up" data-aos-duration="800">
           </div>
           <div class="col-lg-4">
-            <input type="email" class="form-control" id="email"  placeholder="seu email">
-          </div>
-          <div class="col-lg-4">
-            <input type="number" class="form-control" id="numeroDeTelefone" placeholder="ex: +244 944783640">
+            <input type="number" class="form-control" id="numeroDeTelefone" placeholder="ex: +244 944783640" data-aos="fade-up-left" data-aos-duration="800">
           </div>
 
 
-  <div class="form-group col-md-12"><br>
+  <div class="form-group col-md-12" data-aos="zoom-out-down" data-aos-duration="800"><br>
   <label for="nome" class="sr-only">Mensagem</label>
 <textarea class="form-control" id="mensagem" cols="8" rows="8" placeholder="sua Mensagem ex: Ola André... Eu preciso de uma Pagina Web"></textarea></div>
 
@@ -643,8 +670,12 @@ img {
 
           <!-- to work online -->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+         <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
 <script type="text/javascript">
+
+    AOS.init();
     $("form").submit(function(e){
 
         var erro = "";
