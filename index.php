@@ -61,8 +61,10 @@
 <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6/dist/css/bootstrap.min.css"> -->
 
 <!--work on line-->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-<!-- -->
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous"> -->
+<!-- bootstrap 4.0.0-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+
 <!--css for font awesome
 <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">-->
  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -353,66 +355,55 @@ img {
 <!-- -->
     <title>Portfolio</title>
 </head>
-<body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="50">
-  <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md fixed-top">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+  <!-- <nav class=" ">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">André de Carvalho</a>
+    <a class="navbar-brand" href="#"></a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mt-md-0 mt-2 navbar-right">
-        <li class="nav-item active">
-          <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#quem_sou">Quem sou ?</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section_certificacoes">Certificacões</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#habilidades">Habilidades</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section_contacta_me">Contacta me</a>
-        </li>
+
       </ul>
 
     </div>
-  </nav>
+  </nav> -->
 
-<!--  <nav class="navbar navbar-inverse bg-inverse navbar-toggleable-md  fixed-top" >
- <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar_collapse" aria-controls="#navbar_collapse" aria-expanded="true" aria-label="Toggle navigation">
-   <span class="navbar-toggler-icon"></span>
- </button>-->
- <!-- <a class="navbar-brand" href="#"><img src="imagens/logo-small.png" alt="logo" /></a>-->
-<!--
- <div class="collapse navbar-collapse" id="navbar_collapse">
-   <ul class="navbar-nav mr-auto mt-2 mt-md-0 navbar-right">
-     <li class="nav-item active">
-       <a class="nav-link" href="index.php">Andre de Carvalho <span class="sr-only">(current)</span></a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="#about">Quem Sou ? </a>
-     </li>
-     <li class="nav-item">
-       <a class="nav-link" href="#features">Projectos</a>
-     </li>
-       <li class="nav-item">
-         <a class="nav-link" href="#contacto">Contacta-me</a></li>
-   </ul>
-
- </div>
+  <!-- new bootstrap -->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">André de Carvalho</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#quem_sou">Quem sou ?</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section_certificacoes">Certificacões</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#habilidades">Habilidades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section_contacta_me">Contacta me</a>
+      </li>
+    </ul>
+  </div>
 </nav>
 
--->
+
    <!-- section jumbotron -->
 
    <section>
        <div class="jumbotron">
-         <h1 class="display-3">André de Carvalho</h1>
-              <p class="lead">Programador Web & UI disgner</p>
+         <h1 class="display-4">André de Carvalho</h1>
+              <p class="lead">Programador Web & UI disigner</p>
               <hr class="my-4">
               <h3>Vamos levar o teu Negocio a outro Nível</h3>
               <p class="lead">
@@ -670,7 +661,10 @@ img {
 
           <!-- to work online -->
           <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+
+         <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script> -->
          <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 
 <script type="text/javascript">
