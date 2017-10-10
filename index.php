@@ -12,6 +12,7 @@ include_once 'php/send_email.php';
 <html>
 <head lang="en">
   <meta charset="UTF-8">
+  <!-- <meta name=viewport content="width=360" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!--to work offline bootstrap CSS
   <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6/dist/css/bootstrap.min.css"> -->
@@ -47,7 +48,7 @@ include_once 'php/send_email.php';
   <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 -->
 <script src="skills/jquery.skills.js"></script>
-<script src="skills/js/functions.js"></script>
+<script src="js/functions.js"></script>
 
 
 <script>
@@ -73,19 +74,6 @@ $(document).ready(function(){
 <title>Portfolio</title>
 </head>
 <body data-spy="scroll" data-target="#navbarNav" data-offset="50">
-  <!-- <nav class=" ">
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-  <span class="navbar-toggler-icon"></span>
-</button>
-<a class="navbar-brand" href="#"></a>
-
-<div class="collapse navbar-collapse" id="navbarSupportedContent">
-<ul class="navbar-nav mt-md-0 mt-2 navbar-right">
-
-</ul>
-
-</div>
-</nav> -->
 
 <!-- new bootstrap -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -142,7 +130,7 @@ $(document).ready(function(){
       </div>
       <div class="col-md-12">
         <p>
-          <img data-aos="flip-left" data-aos-easing="ease-out-cubic" data-duration="1000"  class="rounded-circle img-fluid" src="image/background.jpg" alt="minha imagem"/>
+          <img   class="rounded-circle img-fluid" src="image/background.jpg" alt="minha imagem"/>
         </p>
       </div>
       <div class="container">
@@ -202,7 +190,7 @@ $(document).ready(function(){
   <h1 class="title">Certificações<hr class="my-3"></h1><br>
   <div class="container">
     <div class="row">
-      <div class="col-sm-6" data-aos="fade-down">
+      <div class="col-sm-6" >
         <div class="card">
           <img class="card-img-top" src="image/udemy.jpg" alt="Imagem do certificado" style="width:100%;">
           <div class="card-block">
@@ -214,7 +202,7 @@ $(document).ready(function(){
         </div>
       </div>
 
-    <div class="col-sm-6" data-aos="fade-zoom-in" data-aos-easing="ease-in-back">
+    <div class="col-sm-6" >
       <div class="card"  >
         <img class="card-img-top" src="image/udemy.jpg" alt="Card image cap" style="width:100%;">
         <div class="card-block">
@@ -238,22 +226,25 @@ $(document).ready(function(){
 </div>
 <section id="habilidades" class="skills section">
   <div class="container">
-    <h1 class="letra_grande title" align="center">Habilidades<hr class="my-3"></h1>
+    <div class="row">
+        <div class="col-sm-12">
+
+      <h1 class="letra_grande title" align="center">Habilidades<hr class="my-3"></h1>
       <h6>Desenvolvimento  WEB</h6>
 
     <div class="habilidades_contenedor">
       <div id="codeconSkills">
         <div class="codeconSkillbar">
-          <div id="" class="skillBar" skill-percentage="100%" skill-color="#448AFF">
+          <div id="" class="skillBar" skill-percentage="90%" skill-color="#448AFF">
             <span class="codeconSkillArea ">HTML</span>
-            <span class="PercentText ">100%</span>
+            <span class="PercentText ">90%</span>
           </div>
 
         </div>
         <div class="codeconSkillbar">
-          <div id="" class="skillBar" skill-percentage="80%" skill-color="#FFC107">
+          <div id="" class="skillBar" skill-percentage="70%" skill-color="#FFC107">
             <span class="codeconSkillArea">Javascript</span>
-            <span class="PercentText">80%</span>
+            <span class="PercentText">70%</span>
 
           </div>
 
@@ -283,17 +274,18 @@ $(document).ready(function(){
 
       </div>
     </div>
-
+  </div>
+</div>
   </section>
   <!--skills ends here -->
 
-  <!--serviços section starts here-->
+  <!--serviços section_projectos starts here-->
   <section class="section" id="section_projectos">
-
-    <h1 class="title">Projectos <hr class="my-3 "></h1><br>
     <div class="container">
+    <h1 class="title">Projectos <hr class="my-3 "></h1><br>
+
       <div class="row">
-        <div class="col-sm-6" data-aos="fade-down-right" data-aos-duration="1000">
+        <div class="col-sm-6">
           <div class="card" >
             <img class="card-img-top" src="image/ce.png" alt="Card image cap" style="width:100%;">
             <div class="card-block">
@@ -304,7 +296,7 @@ $(document).ready(function(){
             </div>
           </div>
         </div>
-        <div class="col-sm-6" data-aos="fade-down-left" data-aos-duration="1000">
+        <div class="col-sm-6">
           <div class="card" >
             <img class="card-img-top" src="image/loso.png" alt="Card image cap" style="width:100%;">
             <div class="card-block">
@@ -332,20 +324,20 @@ $(document).ready(function(){
       <form class="form-group">
         <div class="row">
           <div class="col-lg-4">
-            <input type="text" class="form-control" id="nome" placeholder="seu nome" data-aos="fade-down-right" data-aos-duration="800">
+            <input autocorrect=off autocapitalize=words type="text" class="form-control" id="nome" placeholder="seu nome">
           </div>
           <div class="col-lg-4" >
-            <input type="email" class="form-control" id="email"  placeholder="seu email" data-aos="fade-up" data-aos-duration="800">
+            <input autocorrect=off autocapitalize=words type="email" class="form-control" id="email"  placeholder="seu email">
           </div>
           <div class="col-lg-4">
-            <input type="number" class="form-control" id="numeroDeTelefone" placeholder="ex: +244 944783640" data-aos="fade-up-left" data-aos-duration="800">
+            <input autocorrect=off autocapitalize=words type="number" class="form-control" id="numeroDeTelefone" placeholder="ex: +244 944783640">
           </div>
 
 
-          <div class="form-group col-md-12" data-aos="zoom-out-down" data-aos-duration="800"><br>
+          <div class="form-group col-md-12" ><br>
             <label for="nome" class="sr-only">Mensagem</label>
             <textarea class="form-control" id="mensagem" cols="8" rows="8" placeholder="sua Mensagem ex: Ola André... Eu preciso de uma Pagina Web"></textarea></div>
-            <button type="submit" class="btn btn-primary float-right" id="botaoEnviar">Envia Mensagem</button>
+            <button type="submit" class="btn btn-primary float-right" id="botaoEnviar">Enviar Mensagem</button>
           </form>
         </div>
       </section>
@@ -353,19 +345,16 @@ $(document).ready(function(){
       <!--secton contacta-me ends here-->
 
       <!-- footer -->
-      <footer class="footer">
-        <div class="container">
-          <div class="row">
-            <p class="col-md-6"> Direitos de autor André de Carvalho &copy 2017</p>
-            <div id="footer_padding">
-              <i class="fa fa-twitter col-md-3" aria-hidden="true" style="color:blue;"></i>
-              <i class="fa fa-google-plus col-md-3" aria-hidden="true" style="color:red;"></i>
+      <footer class="container" id="footer">
+    <p>Redes Socias.</p>
+    <i class="  fa fa-facebook-official opacity"></i>
+    <i class=" fa fa-instagram opacity"></i>
+    <i class=" fa fa-snapchat opacity"></i>
+    <i class=" fa fa-pinterest-p opacity"></i>
+    <i class=" fa fa-twitter opacity"></i>
+    <i class=" fa fa-linkedin opacity"></i>
 
-            </div>
-
-          </div>
-        </div>
-      </footer>
+       </footer>
 
 
       <!--to work offline
