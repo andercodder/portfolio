@@ -73,7 +73,7 @@ $(document).ready(function(){
 <!-- -->
 <title>Portfolio</title>
 </head>
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="20">
 
 <!-- new bootstrap -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -94,6 +94,9 @@ $(document).ready(function(){
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#habilidades">Habilidades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section_projectos">projectos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#section_contacta_me">Contacta me</a>
