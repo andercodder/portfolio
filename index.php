@@ -1,7 +1,7 @@
 <?php
 
 /*using php to send email validation*/
-include_once 'php/send_email.php';
+include_once 'email/send_email.php';
 ?>
 
 
@@ -71,9 +71,10 @@ $(document).ready(function(){
 
 </style>
 <!-- -->
-<title>Portfolio</title>
+<title>andre vemba m.de Carvalho</title>
+<link class="rounded-circle img-fluid" rel="shortcut icon" href="image/background.jpg">
 </head>
-<body data-spy="scroll" data-target="#navbarNav" data-offset="50">
+<body data-spy="scroll" data-target="#navbarNav" data-offset="20">
 
 <!-- new bootstrap -->
 <nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark">
@@ -94,6 +95,9 @@ $(document).ready(function(){
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#habilidades">Habilidades</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section_projectos">projectos</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="#section_contacta_me">Contacta me</a>
@@ -130,7 +134,7 @@ $(document).ready(function(){
       </div>
       <div class="col-md-12">
         <p>
-          <img   class="rounded-circle img-fluid" src="image/background.jpg" alt="minha imagem"/>
+          <img class="rounded-circle img-fluid" src="image/background.jpg" alt="minha imagem"/>
         </p>
       </div>
       <div class="container">
@@ -321,22 +325,23 @@ $(document).ready(function(){
       <div id="erro">
         <?php echo $erro.$sucessosms; ?>
       </div>
-      <form class="form-group">
-        <div class="row">
+      <form class="form-group" method="post">
+
+      <div class="row">
           <div class="col-lg-4">
-            <input autocorrect=off autocapitalize=words type="text" class="form-control" id="nome" placeholder="seu nome">
+            <input autocorrect=off autocapitalize=words type="text" class="form-control" id="nome" name="nome" placeholder="seu nome">
           </div>
           <div class="col-lg-4" >
-            <input autocorrect=off autocapitalize=words type="email" class="form-control" id="email"  placeholder="seu email">
+            <input autocorrect=off autocapitalize=words type="email" class="form-control" id="email" name="email"  placeholder="seu email">
           </div>
           <div class="col-lg-4">
-            <input autocorrect=off autocapitalize=words type="number" class="form-control" id="numeroDeTelefone" placeholder="ex: +244 944783640">
+            <input autocorrect=off autocapitalize=words type="number" class="form-control" id="numeroDeTelefone" name="numeroDeTelefone" placeholder="ex: +244 944783640">
           </div>
 
 
           <div class="form-group col-md-12" ><br>
             <label for="nome" class="sr-only">Mensagem</label>
-            <textarea class="form-control" id="mensagem" cols="8" rows="8" placeholder="sua Mensagem ex: Ola André... Eu preciso de uma Pagina Web"></textarea></div>
+            <textarea class="form-control" id="mensagem" name="mensagem" cols="8" rows="8" placeholder="sua Mensagem ex: Ola André... Eu preciso de uma Pagina Web"></textarea></div>
             <button type="submit" class="btn btn-primary float-right" id="botaoEnviar">Enviar Mensagem</button>
           </form>
         </div>
