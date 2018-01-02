@@ -14,6 +14,9 @@ include_once 'email/send_email.php';
   <meta charset="UTF-8">
   <!-- <meta name=viewport content="width=360" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="portfolio, programador, criacao de paginas web, criador de paginas web com html, html5, css, javascript, jquery e bootstrap,">
+<meta name="keywords" content="web, site, pagina, internet,online,marketing, programador, programacao, informatico, informatica, angolano, negocio">
+
   <!--to work offline bootstrap CSS
   <link rel="stylesheet" href="bootstrap-4.0.0-alpha.6/dist/css/bootstrap.min.css"> -->
 
